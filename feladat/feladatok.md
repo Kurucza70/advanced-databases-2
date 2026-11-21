@@ -26,4 +26,8 @@ WHERE state_province IS NOT NULL;
 SELECT end_date - start_date napok
 FROM hr.job_history;
 
+10. Írasd ki a régiók nevét (`REGION_NAME`) a `REGIONS` táblából csupa nagybetűvel!
+
+SELECT UPPER(region_name)
+FROM hr.regions;
 
