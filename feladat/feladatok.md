@@ -68,3 +68,13 @@ SELECT *
 FROM emp_details_view
 WHERE region_name = 'Europe';
 
+19. Keresd ki a `SECURE_DML` nevű tárolt eljárás forráskódját az `ALL_SOURCE` rendszernézetből!
+
+(type nélkül is megy, mert nincs más. ez is csak a github -os oracle tesztből elérhető)
+
+SELECT text
+FROM all_source
+WHERE name = 'SECURE_DML'
+AND type = 'PROCEDURE';
+
+
