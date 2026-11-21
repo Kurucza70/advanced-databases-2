@@ -35,3 +35,10 @@ FROM hr.regions;
 
 SELECT COUNT(department_id)
 FROM hr.departments;
+
+15. Kapcsold össze az `EMPLOYEES` és a `DEPARTMENTS` táblákat, és írasd ki a dolgozó vezetéknevét a részlege nevével együtt!
+
+SELECT e.last_name,
+d.department_name
+FROM hr.employees e
+JOIN hr.DEPARTMENTS d ON e.department_id = d.department_id;
