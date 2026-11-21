@@ -59,3 +59,12 @@ d.department_name
 FROM hr.employees e
 JOIN hr.jobs j ON e.job_id = j.job_id
 JOIN hr.departments d ON e.department_id = d.department_id;
+
+18. Kérdezd le az `EMP_DETAILS_VIEW` nézetből az összes dolgozót, majd szűrd ki azokat, akik a "Europe" régióban dolgoznak!
+
+(Ez a rész egyébként az alap oracle teszt -ből hiányzik. a github -os sql sémában viszont benne van)
+
+SELECT *
+FROM emp_details_view
+WHERE region_name = 'Europe';
+
