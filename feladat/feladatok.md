@@ -21,3 +21,9 @@ SELECT city, state_province
 FROM hr.locations
 WHERE state_province IS NOT NULL;
 
+8. A `JOB_HISTORY` táblából számold ki napokban, hogy az egyes korábbi munkaköröket mennyi ideig töltötték be (a `START_DATE` és `END_DATE` különbsége)!
+
+SELECT end_date - start_date napok
+FROM hr.job_history;
+
+
