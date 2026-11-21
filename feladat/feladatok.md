@@ -50,3 +50,12 @@ l.city
 FROM hr.departments d
 JOIN hr.locations l ON d.location_id = l.location_id;
 
+17. Írj háromtáblás lekérdezést! Kapcsold össze a dolgozókat, a munkaköröket (`JOBS`) és a részlegeket. Írasd ki a dolgozó nevét, a munkakör megnevezését és a részleg nevét!
+
+SELECT e.first_name,
+e.last_name,
+j.job_title,
+d.department_name
+FROM hr.employees e
+JOIN hr.jobs j ON e.job_id = j.job_id
+JOIN hr.departments d ON e.department_id = d.department_id;
