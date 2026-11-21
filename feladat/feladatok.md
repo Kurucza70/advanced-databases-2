@@ -12,3 +12,9 @@ SELECT *
 FROM hr.jobs
 WHERE max_salary > 10000;
 
+5. Listázd ki a `LOCATIONS` táblából a városokat (`CITY`) és az államokat/tartományokat (`STATE_PROVINCE`), de csak azokat a sorokat, ahol a tartomány ki van töltve!
+
+SELECT city, state_province
+FROM hr.locations
+WHERE state_province IS NOT NULL;
+
