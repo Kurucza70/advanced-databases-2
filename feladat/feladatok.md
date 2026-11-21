@@ -84,3 +84,20 @@ triggering_event
 FROM all_triggers
 WHERE trigger_name = 'UPDATE_JOB_HISTORY';
 
+A pokémon -os feladathoz (mivel a sulis elérés még problémás) ezt a file -t használtam.
+https://github.com/lgreski/pokemonData/blob/master/Pokemon.csv
+
+(nem biztos hogy jó így, a második tipust itt nem is néztem, illetve nem is értem miért van két tipusa. :))
+
+create or replace PROCEDURE legkisebb_hp IS
+v_nev    pokemon.name%TYPE;
+v_tipus1 pokemon.type1%TYPE;
+BEGIN
+SELECT name, type1
+INTO v_nev, v_tipus1
+FROM pokemon
+WHERE hp = (SELECT MIN(hp) FROM pokemon)
+FETCH FIRST 1 ROWS ONLY;
+DBMS_OUTPUT.PUT_LINE('név: ' || v_nev || ', tipus: ' || v_tipus1);
+END;
+
