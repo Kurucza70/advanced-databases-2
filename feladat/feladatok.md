@@ -42,3 +42,11 @@ SELECT e.last_name,
 d.department_name
 FROM hr.employees e
 JOIN hr.DEPARTMENTS d ON e.department_id = d.department_id;
+
+16. Kapcsold össze a `DEPARTMENTS` és `LOCATIONS` táblákat! Melyik részleg melyik városban található?
+
+SELECT d.department_name,
+l.city
+FROM hr.departments d
+JOIN hr.locations l ON d.location_id = l.location_id;
+
