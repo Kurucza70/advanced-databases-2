@@ -77,4 +77,10 @@ FROM all_source
 WHERE name = 'SECURE_DML'
 AND type = 'PROCEDURE';
 
+20. Kérdezd le az `ALL_TRIGGERS` rendszernézetből, hogy az `UPDATE_JOB_HISTORY` trigger melyik táblához kapcsolódik, és milyen esemény váltja ki!
+
+SELECT table_name,
+triggering_event
+FROM all_triggers
+WHERE trigger_name = 'UPDATE_JOB_HISTORY';
 
