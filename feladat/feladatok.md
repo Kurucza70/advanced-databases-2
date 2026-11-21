@@ -2,6 +2,7 @@ A megoldandó feladatok szövegét is bemásolom ide.
 A feladatok korábban készültek, most csak ismét lellenőrzöm őket az elérhető oracle teszt db -vel.
 Az iskolai vpn probléma sajnos nem oldódott meg, így a benti sémákhoz való hozzáférést sem tudtam
 ellenőrzizni.
+A táblák egy részét online sémával néztem, "hr" alatt szerepeltek, ezért szerepel a táblák előtt.
 
 2. Listázd ki a részlegek nevét (`DEPARTMENT_NAME`) a `DEPARTMENTS` táblából, ábécésorrendbe rendezve!
 
