@@ -31,3 +31,7 @@ FROM hr.job_history;
 SELECT UPPER(region_name)
 FROM hr.regions;
 
+11. Számold össze, hány részleg (`DEPARTMENT_ID`) található a `DEPARTMENTS` táblában!
+
+SELECT COUNT(department_id)
+FROM hr.departments;
